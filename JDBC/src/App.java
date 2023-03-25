@@ -35,7 +35,7 @@ public class App {
         ResultSet tableResult = sttt.executeQuery(mySqlString);
         System.out.println("Query executada");
         
-        while(tableResult.next()){
+        while (tableResult.next()){
             String username = tableResult.getString("username");
             System.out.println("Nome de usuario: " + username);
         }
